@@ -63,7 +63,7 @@ const ObjectDetection = () => {
       <div className="md:flex gap-[40px] mb-[40px]">
         {imgSrc ? (
           <div
-            className={`relative h-[168px] md:w-[264px] overflow-hidden rounded-[10px] border border-2 ${
+            className={`relative h-[200px] lg:h-[168px] md:w-[264px] overflow-hidden rounded-[10px] border border-2 ${
               predictions.length > 0 ? "border-red" : "border-purple"
             }`}
           >
@@ -81,7 +81,7 @@ const ObjectDetection = () => {
             )}
           </div>
         ) : (
-          <div className="relative h-[168px] md:w-[264px] overflow-hidden rounded-[10px] border border-2 border-purple">
+          <div className="relative h-[200px] lg:h-[168px] md:w-[264px] overflow-hidden rounded-[10px] border border-2 border-purple">
             <Webcam height={600} width={600} ref={webcamRef} />
           </div>
         )}
